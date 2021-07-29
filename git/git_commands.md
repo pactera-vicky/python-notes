@@ -121,6 +121,22 @@ rename the default branch main, to match what github expects:
   `git checkout tags/release-jp-fix-v2 -b release-jp-fix-v2-branch`
 
 
+## 11 git cherry-pick usage
+
+- git checkout develop
+
+- git pull
+
+- git checkout -b dev/branch_name
+
+- git cherry-pick [hash value]  (corresponding to the commit hash value in Github)
+
+- git add . (if there are conflicts, using below)
+
+- git cherry-pick -- continue
+
+
+
 
 
 
