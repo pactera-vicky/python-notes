@@ -1,20 +1,20 @@
 # Table of contents
 
-1. [create a new repository](#create a new repository)
-2. [push an existing repository](#push an existing repository)
-3. [push local branch to repository branch](#push local branch to repository branch)
-4. [merge former-version with current version code](#merge former-version with current version code)
-5. [how to delete a git branch both locally and remotely](#how to delete a git branch both locally and remotely)
-6. [git reset](#git reset)
-7. [how to change remote git repository](#how to change remote git repository)
-8. [switch to another branch and keep the changes while modification](#switch to another branch and keep the changes while modification)
-9. [change branch name](#change branch name)
-10. [how to create a tag](#how to create a tag)
-11. [git cherry-pick usage](#git cherry-pick usage)
-12. [delete commit](#delete commit)
+1. [create-new-repository](#create-new-repository)
+2. [push-an-existing-repository](#push-an-existing-repository)
+3. [push-local-branch-to-repository-branch](#push-local-branch-to-repository-branch)
+4. [merge-former-version-with-current-version-code](#merge-former-version-with-current-version-code)
+5. [delete-a-git-branch-both-locally-and-remotely](#delete-a-git-branch-both-locally-and-remotely)
+6. [git-reset](#git-reset)
+7. [change-remote-git-repository](#change-remote-git-repository)
+8. [switch-to-another-branch/keep-the-changes](#switch-to-another-branch/keep-the-changes)
+9. [rename-branch-name](#rename-branch-name)
+10. [create-a-tag](#create-a-tag)
+11. [cherry-pick-usage](#cherry-pick-usage)
+12. [delete-commit](#delete-commit)
 
 
-# create a new repository
+# create-new-repository
 echo "# doc_summary" >> README.md
 
 `$ git init`
@@ -29,7 +29,7 @@ echo "# doc_summary" >> README.md
 
 `$ git push -u origin main`
 
-# push an existing repository
+# push-an-existing-repository
 
 add your files to your repository`$ git add requirements.txt main.py .gitignore`
 
@@ -45,7 +45,7 @@ rename the default branch main, to match what github expects:
 
 `$ git push -u origin main`(push your main branch to github`s main branch) 
 
-# push local branch to repository branch
+# push-local-branch-to-repository-branch
 
 - before you push you local branch you need to pull the latest code from the repository 
 
@@ -63,7 +63,7 @@ rename the default branch main, to match what github expects:
 
 `git push origin dev`
 
-# merge former-version with current version code
+# merge-former-version-with-current-version-code
 
 - after git commit use 
 
@@ -81,17 +81,17 @@ rename the default branch main, to match what github expects:
   
 - if you do close pull request, and want to push you modify code again, in this situation you must use `git rebase`
 
-# how to delete a git branch both locally and remotely
+# delete-a-git-branch-both-locally-and-remotely
 
 - delete a git branch locally
 
   `$ git branch -D your_branch_name`(implement this command you need to switch to master)
 
 
-# git reset
+# git-reset
 
 
-# how to change remote git repository
+# change-remote-git-repository
 
 - list your existing remote repositories
 
@@ -102,7 +102,7 @@ rename the default branch main, to match what github expects:
 
 - then check the remote repository list
 
-# switch to another branch and keep the changes while modification
+# switch-to-another-branch/keep-the-changes
 
 - `git stash`(remember the stash note)
 
@@ -110,7 +110,7 @@ rename the default branch main, to match what github expects:
   
 - 'git stash apply stash@{number}'
 
-# change branch name
+# rename-branch-name
 
 - git branch -m [oldBranchName] [newBranchName]
 
@@ -137,7 +137,7 @@ rename the default branch main, to match what github expects:
   `git checkout tags/release-jp-fix-v2 -b release-jp-fix-v2-branch`
 
 
-# git cherry-pick usage
+# cherry-pick-usage
 
 - git checkout develop
 
@@ -152,7 +152,7 @@ rename the default branch main, to match what github expects:
 - git cherry-pick -- continue
 
 
-# delete commit
+# delete-commit
 
 - git log(get your commit id the former id of your wrong commit)
 
