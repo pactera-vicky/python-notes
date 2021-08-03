@@ -1,4 +1,16 @@
-# introduce some commands in LINUX OS
+# table of contents
+1. [introduce some commands in LINUX](#introduce some commands in LINUX)
+    1. [cd](#cd)
+    2. [ls](#ls)
+    3. [mkdir](#mkdir)
+    4. [touch](#douch)
+    5. [vim](#vim)
+    6. [cat](#cat)
+    7. [rm](#rm)
+    8. [ps](#ps)
+    9. [if you want to run terminal commands in python script](#if you want to run terminal commands in python script)
+
+# introduce some commands in LINUX 
 some easy and usefull commands
 ## cd
     cd command directed you to  a path
