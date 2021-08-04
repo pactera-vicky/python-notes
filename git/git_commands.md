@@ -119,7 +119,7 @@ rename the default branch main, to match what github expects:
 
 - git create tag
   
-  - The tag should been created in the master branch
+  - The tag should be created in the master branch(very important)
   
    git checkout master
    
