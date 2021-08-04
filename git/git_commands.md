@@ -9,7 +9,7 @@
 7. [change-remote-git-repository](#change-remote-git-repository)
 8. [switch-to-another-branch/keep-the-changes](#switch-to-another-branch/keep-the-changes)
 9. [rename-branch-name](#rename-branch-name)
-10. [create-a-tag](#create-a-tag)
+10. [create a tag](#create-a-tag)
 11. [cherry-pick-usage](#cherry-pick-usage)
 12. [delete-commit](#delete-commit)
 13. [merge develop to master](#merge-branch-develop-to-master-on-gitbhub)
@@ -115,7 +115,7 @@ rename the default branch main, to match what github expects:
 
 - git branch -m [oldBranchName] [newBranchName]
 
-# how to create a tag
+# create-a-tag
 
 - git create tag
   
@@ -152,6 +152,22 @@ rename the default branch main, to match what github expects:
 
 - git cherry-pick -- continue
 
+if you want to merge specific branch to master branch
+
+- git checkout master and git pull 
+
+- git branch -b merge-PD-1125
+
+- git cherry-pick commit id(corresponding to the commit which you want to merge to master)
+
+- if it faild, you could use git cherry-pick -m i commit id
+
+- git log 
+
+- git push origin merge-PD-1125
+
+- 
+
 
 # delete-commit
 
@@ -172,7 +188,13 @@ rename the default branch main, to match what github expects:
 
 - you could choose which two branches you want to merge
 
+# error: You have not concluded your merge (MERGE_HEAD exists)
 
+- $:git merge --abort
+  
+- $:git reset --merge
+  
+- $:git pull
 
 
 
