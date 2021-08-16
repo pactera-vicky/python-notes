@@ -47,11 +47,13 @@ some easy and usefull commands
 
 ## ps(process status)
 
-    ps -ef | grep python (display the list of running processs in python)
+    $ps -ef | grep python (display the list of running processs in python)
 
-    pkill python (kill all the python program
+    $pkill python (kill all the python program
 
-    pkill -f pii_api.py (kill the *.py)
+    $pkill -f pii_api.py (kill the *.py)
+    
+    `or use $kill -9 <pid number>`
 
 ## run-terminal-commands-in-python-script
 
