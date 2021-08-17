@@ -100,7 +100,7 @@ rename the default branch main, to match what github expects:
 - Change a remote Git repository
 
   `$ git remote set-url origin https://github.com/[your_username]/[repository_name].git `
-- remove a remote repositories
+- remove current remote repositories
 
   `$ git remote remove origin`
 
