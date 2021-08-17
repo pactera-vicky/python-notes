@@ -13,6 +13,7 @@
 11. [cherry-pick-usage](#cherry-pick-usage)
 12. [delete-commit](#delete-commit)
 13. [merge develop to master](#merge-branch-develop-to-master-on-gitbhub)
+14. [git bug solving](#git-bug-solving)
 
 
 # create-new-repository
@@ -99,7 +100,7 @@ rename the default branch main, to match what github expects:
   `$ git remote -v`
 - Change a remote Git repository
 
-  `$ git remote set-url origin https://github.com/[your_username]/[repository_name].git `
+  `$ git remote set-url origin https://github.com/<your_username>/<repository_name>.git `
 - remove current remote repositories
 
   `$ git remote remove origin`
@@ -204,6 +205,22 @@ if you want to merge specific branch to master branch
 - $:git reset --merge
   
 - $:git pull
+
+# git-bug-solving
+- problem description
+  
+   remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+   remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+   fatal: unable to access 'https://github.com/<user name>/<repo name>/': The requested URL returned error: 403
+  
+- solution
+
+  git remote remove origin(remove your current repository)
+
+  git remote add origin git remote add origin https://<personal access token>@github.com/<user name>/<repo name>.git
+
+
+
 
 
 
