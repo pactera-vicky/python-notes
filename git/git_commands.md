@@ -26,7 +26,7 @@ echo "# doc_summary" >> README.md
 
 `$ git branch -M main`
 
-`$ git remote add origin https://github.com/[your_username]/[repository_name].git` 
+`$ git remote add origin https://github.com/<your_username>/<repository_name>.git` 
 
 `$ git push -u origin main`
 
@@ -36,9 +36,9 @@ add your files to your repository`$ git add requirements.txt main.py .gitignore`
 
 `$ git commit -m"first commit"`
 
-or open your github, login your profile, and create a new repository called [your repository name-practice]. create an empty repository without a README or license file,once you created the repository, return to the command line and push your local files to github
+or open your github, login your profile, and create a new repository called <your repository name-practice>. create an empty repository without a README or license file,once you created the repository, return to the command line and push your local files to github
 
-`$ git remote add origin https://github.com/[your_username]/[repository_name].git `
+`$ git remote add origin https://github.com/<your_username>/<repository_name>.git `
 
 rename the default branch main, to match what github expects: 
 
@@ -58,7 +58,7 @@ rename the default branch main, to match what github expects:
 
 `git status` (check the file status) 
 
-`git reset HEAD your_file_name`(to undo a git add eg:git reset HEAD .idea) 
+`git reset HEAD <your_file_name>`(to undo a git add eg:git reset HEAD .idea) 
 
 `git commit -m"your comments on this push"` 
 
@@ -100,8 +100,17 @@ rename the default branch main, to match what github expects:
 - Change a remote Git repository
 
   `$ git remote set-url origin https://github.com/[your_username]/[repository_name].git `
+- remove a remote repositories
+
+  `$ git remote remove origin`
+
+- add a remote repository
+
+  `$ git remote add origin https://github.com/<your username>/<repository name>.git`
+
 
 - then check the remote repository list
+
 
 # switch-to-another-branch/keep-the-changes
 
