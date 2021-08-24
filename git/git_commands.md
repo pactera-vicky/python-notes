@@ -15,6 +15,7 @@
 13. [merge develop to master](#merge-branch-develop-to-master-on-gitbhub)
 14. [git bug solving](#git-bug-solving)
 15. [git log](#git-log-usage)
+16. [conflicts resolve](#git-confilcts-reslove)
 
 
 # create-new-repository
@@ -229,6 +230,23 @@ if you want to merge specific branch to master branch
   `$ git log --pretty=oneline`(when there are lots of commit, you could use this command to check all the logs by one line)
 
   `$ git log -q`
+
+# #git-confilcts-reslove
+- when there is a conflict prompt
+
+  `$ git status`
+
+  `$ git diff`(check the difference)
+
+  `$ cat <conflict_file>`
+
+  `$ vim <conflict_file>` (modify the conflicts)
+
+  `$ git add <conflict_file>`
+
+  `$ git commit -m"fix conflict`
+
+
 
 
 
